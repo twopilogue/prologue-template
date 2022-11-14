@@ -32,9 +32,10 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Header />
-      <Logo />
+
       <div className="display_row">
         <div className="display_column">
+          <Logo />
           <Profile />
           <Category />
         </div>
