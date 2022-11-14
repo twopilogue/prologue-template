@@ -1,7 +1,10 @@
 import { StaticQuery, Link, graphql } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
+import customizing from "../util/customizing-setting.json"
 
 const Logo = () => {
+  const logoText = customizing.logoText
   return (
     <StaticQuery
       query={graphql`
@@ -14,10 +17,18 @@ const Logo = () => {
         }
       `}
       render={data => {
-        return (
+        return logoText ? (
           <h1>
-            <Link to="/">{data.site.siteMetadata?.title || `Title`}</Link>
+            <Link to="/">{logoText}</Link>
           </h1>
+        ) : (
+          <div className="logoImg">
+            <StaticImage
+              layout="fullWidth"
+              src="../images/gatsby-icon.png"
+              alt="logoImg"
+            />
+          </div>
         )
       }}
     />

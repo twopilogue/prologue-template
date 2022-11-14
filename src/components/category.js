@@ -32,7 +32,7 @@ const Category = () => {
         <div className="category">
           <nav>
             {CATEGORY_ITEM.map(category => (
-              <li key={category}>
+              <div key={category}>
                 <Link
                   to={
                     category === "전체보기"
@@ -44,7 +44,7 @@ const Category = () => {
                 >
                   {category}
                 </Link>
-              </li>
+              </div>
             ))}
           </nav>
         </div>

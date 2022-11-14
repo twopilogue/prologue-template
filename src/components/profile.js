@@ -32,17 +32,15 @@ const Bio = () => {
 
   return (
     <div className="profile">
-      <div className="display_column">
-        <StaticImage
-          className="profile-avatar"
-          layout="fixed"
-          formats={["auto", "webp", "avif"]}
-          src="../images/profile-pic.png"
-          width={200}
-          height={200}
-          alt="Profile picture"
-        />
-      </div>
+      <StaticImage
+        className="profile-avatar"
+        layout="fixed"
+        formats={["auto", "webp", "avif"]}
+        src="../images/profile-pic.png"
+        width={200}
+        height={200}
+        alt="Profile picture"
+      />
       <div>
         {author?.name && (
           <div>
