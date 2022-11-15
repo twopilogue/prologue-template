@@ -20,33 +20,25 @@ const Header = () => {
   )
 
   return (
-    <header>
-      <div>
-        {/* <div>
-          <Link to="/">{site.siteMetadata.title}</Link>
-        </div> */}
+    <div className="page-container">
+      {HEADER_NAV_ITEM.map((item, index) => {
+        if (item.isExternal) {
+          return (
+            <HeaderNavListItem key={index}>
+              <Link to={item.url} target="_blank" rel="noopener noreferrer">
+                {item.label}
+              </Link>
+            </HeaderNavListItem>
+          )
+        }
 
-        <HeaderNavList>
-          {HEADER_NAV_ITEM.map((item, index) => {
-            if (item.isExternal) {
-              return (
-                <HeaderNavListItem key={index}>
-                  <a href={item.url} target="_blank" rel="noopener noreferrer">
-                    {item.label}
-                  </a>
-                </HeaderNavListItem>
-              )
-            }
-
-            return (
-              <HeaderNavListItem key={index}>
-                <Link to={item.url}>{item.label}</Link>
-              </HeaderNavListItem>
-            )
-          })}
-        </HeaderNavList>
-      </div>
-    </header>
+        return (
+          <div className="page" key={index}>
+            <Link to={item.url}>{item.label}</Link>
+          </div>
+        )
+      })}
+    </div>
   )
 }
 
