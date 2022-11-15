@@ -31,11 +31,12 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Header />
-
+      <div className="display_row">
+        <Logo />
+        <Header />
+      </div>
       <div className="display_row">
         <div className="display_column">
-          <Logo />
           <Profile />
           <Category />
         </div>
