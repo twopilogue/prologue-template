@@ -2,6 +2,7 @@ import { StaticQuery, Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import customizing from "../util/customizing-setting.json"
+import logoImg from "../images/gatsby-icon.png"
 
 const Logo = () => {
   const logoText = customizing.logoText
@@ -22,12 +23,8 @@ const Logo = () => {
             <Link to="/">{logoText}</Link>
           </h1>
         ) : (
-          <div className="logoImg">
-            <StaticImage
-              layout="fullWidth"
-              src="../images/gatsby-icon.png"
-              alt="logoImg"
-            />
+          <div className="logo-container">
+            <img src={logoImg} className="logo-img" alt="logoImg" />
           </div>
         )
       }}
