@@ -19,16 +19,16 @@
       },
       "email": {
         "title": "email",
-        "username": "sdds",
+        "username": "",
         "url": "mailto:` }"
       }
     },
     "author": {
-      "summary": "..",
+      "summary": "",
       "profile": "../assets/profile-pic.png",
-      "name": "una"
+      "name": ""
     },
-    "description": "..",
-    "title": ".."
+    "description": "",
+    "title": ""
   }
 }
