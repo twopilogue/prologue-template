@@ -1,7 +1,7 @@
 import { StaticQuery, Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
-import customizing from "../util/customizing-setting.json"
+import customizing from "../utils/customizing-setting.json"
 import logoImg from "../images/gatsby-icon.png"
 
 const Logo = () => {

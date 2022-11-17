@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
-import setting from "/src/util/customizing-setting"
+import setting from "/src/utils/customizing-setting"
 
 const HEADER_NAV_ITEM = setting.pages
 
