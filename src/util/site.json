@@ -1,13 +1,34 @@
 {
   "meta": {
-    "title": "Foundation",
-    "author": {
-      "name": "Kyle Mathews",
-      "summary": "who lives and works in San Francisco building useful things."
-    },
-    "description": "A starter to launch your blazing fast personal website and a blog, Built with Gatsby and Netlify CMS. Made with ❤ by Stackrole",
-    "siteUrl": "https://gatsbystarterblogsource.gatsbyjs.io/",
+    "siteUrl": "https:\/\/gatsbystarterblogsource.gatsbyjs.io\/",
     "social": {
-    }
+      "github": {
+        "title": "github",
+        "username": "",
+        "url": "https://github.com/"
+      },
+      "twitter": {
+        "title": "twitter",
+        "username": "",
+        "url": "https://twitter.com/"
+      },
+      "instagram": {
+        "title": "instagram",
+        "username": "",
+        "url": "https://www.instagram.com/"
+      },
+      "email": {
+        "title": "email",
+        "username": "sdds",
+        "url": "mailto:` }"
+      }
+    },
+    "author": {
+      "summary": "..",
+      "profile": "../assets/profile-pic.png",
+      "name": "una"
+    },
+    "description": "..",
+    "title": ".."
   }
 }

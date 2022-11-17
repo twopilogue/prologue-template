@@ -14,9 +14,9 @@ const Blog = ({ data }) => {
       <div>
         <h1>Blog</h1>
         <ol>
-          {posts.map(node => {
+          {posts.map((node, i) => {
             return (
-              <li>
+              <li key={i}>
                 <Link to={`${node.fields.slug}`}>
                   <h2>{node.frontmatter.title}</h2>
                   <p>{node.frontmatter.date}</p>
