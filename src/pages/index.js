@@ -36,14 +36,14 @@ const BlogIndex = ({ data, location }) => {
         <Header />
       </div>
       <div className="display-row">
-        <div className="display-grid-r">
-          <div className="display-column">
-            <Title />
-            <Contents />
-          </div>
+        <div className="display-grid-l">
           <div className="display-column">
             <Profile />
             <Category />
+          </div>
+          <div className="display-column">
+            <Title />
+            <Contents />
           </div>
         </div>
       </div>
