@@ -1,6 +1,8 @@
 on:
   push:
     branches: [ main ]
+    paths: 
+     - "build"
 name: build gatsby
 jobs:
   build_gatsby:
