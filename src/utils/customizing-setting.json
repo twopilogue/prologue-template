@@ -18,7 +18,7 @@
   ],
   "category": ["전체보기", "category1", "category2"],
   "logo": "",
-  "title": { "color": false, "text": "타이틀 텍스트" },
+  "title": { "color": false, "text": "" },
   "customLayout": {
     "layout": [
       { "i": "블로그 로고", "x": 0, "y": 0, "w": 1, "h": 1 },

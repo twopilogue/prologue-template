@@ -5,7 +5,7 @@ import customizing from "../utils/customizing-setting.json"
 import logoImg from "../images/gatsby-icon.png"
 
 const Logo = () => {
-  const logoText = customizing.logoText
+  const logoText = customizing.logo
   return (
     <StaticQuery
       query={graphql`
@@ -18,13 +18,15 @@ const Logo = () => {
         }
       `}
       render={data => {
-        return logoText ? (
-          <h1>
-            <Link to="/">{logoText}</Link>
-          </h1>
-        ) : (
+        return (
           <div className="logo-container">
-            <img src={logoImg} className="logo-img" alt="logoImg" />
+            <Link to="/">
+              {logoText ? (
+                <h3>{logoText}</h3>
+              ) : (
+                <img src={logoImg} className="logo-img" alt="logoImg" />
+              )}
+            </Link>
           </div>
         )
       }}

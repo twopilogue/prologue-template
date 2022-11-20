@@ -67,7 +67,6 @@ const Bio = () => {
             <p className="name">
               <strong>{author.name}</strong>
             </p>
-            <hr className="hr" />
             <p>{author?.summary || null}</p>
           </div>
         )}
