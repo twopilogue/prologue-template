@@ -384,8 +384,8 @@ a:focus {
 }
 
 .logo-img {
-  width: 120px;
-  height: 100px;
+  width: 100px;
+  height: 80px;
   object-fit: contain;
 }
 
@@ -473,11 +473,11 @@ a:focus {
   grid-template-columns: 4fr 1fr;
 }
 
-/* CustomCSS */
-
 body {
   background-color: #ffffff;
 }
+
+/* CustomCSS */
 
 .category {
   background-color: #ffffff;
@@ -509,7 +509,7 @@ body {
 }
 
 .post-list-container-title {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 0.5px solid #ececec;
 }
 
 .post-list-item h2 {
