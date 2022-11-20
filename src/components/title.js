@@ -4,7 +4,7 @@ import React from "react"
 
 const Title = () => {
   const height = 300
-  const titleText = "여기가 타이틀임"
+  const titleText = data.site.siteMetadata.title
   return (
     <StaticQuery
       query={graphql`
