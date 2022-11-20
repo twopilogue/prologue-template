@@ -31,6 +31,11 @@ const Contents = () => {
       `}
       render={data => (
         <div className="post-list-container">
+          <div>
+            <div className="post-list-container-title">
+              <strong>최근 게시글</strong>
+            </div>
+          </div>
           <ol style={{ listStyle: `none` }}>
             {data.allMarkdownRemark.nodes.map(post => {
               const title = post.frontmatter.title || post.fields.slug
@@ -59,6 +64,7 @@ const Contents = () => {
                       />
                     </section>
                   </article>
+                  <hr />
                 </li>
               )
             })}

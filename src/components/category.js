@@ -30,9 +30,13 @@ const Category = () => {
       `}
       render={data => (
         <div className="category">
+          <p>
+            <strong>카테고리</strong>
+          </p>
           <nav>
             {CATEGORY_ITEM.map(category => (
-              <div key={category}>
+              <div key={category} className="category-list">
+                <div>🗒&nbsp;</div>
                 <Link
                   to={
                     category === "전체보기"

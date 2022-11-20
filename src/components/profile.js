@@ -67,11 +67,12 @@ const Bio = () => {
             <p className="name">
               <strong>{author.name}</strong>
             </p>
+            <hr className="hr" />
             <p>{author?.summary || null}</p>
           </div>
         )}
       </div>
-      <div>
+      <div className="profile-social">
         {_social_ids.map(
           (social_id, i) =>
             social_ids[social_id].username && (
@@ -84,6 +85,7 @@ const Bio = () => {
                 key={i}
               >
                 <img
+                  width={30}
                   src={`/icons/${social_ids[social_id].title}.png`}
                   alt={social_ids[social_id].title}
                 />
