@@ -4,7 +4,6 @@ import React from "react"
 import setting from "../utils/customizing-setting.json"
 
 const Title = () => {
-  const height = 300
   const titleText = setting.title.text
   const titleColor = setting.title.color
   return (
@@ -26,13 +25,14 @@ const Title = () => {
                 <h3>{titleText}</h3>
               </div>
             ) : (
-              <div className="title-image">
+              <>
+                <h1>{titleText}</h1>
                 <StaticImage
-                  height={height}
+                  objectFit="cover"
                   src="../images/background-default.jpg"
                   alt="titleImg"
                 />
-              </div>
+              </>
             )}
           </div>
         )
