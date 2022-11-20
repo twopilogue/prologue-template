@@ -1,86 +1,54 @@
 ---
-title: Hello World
-description: Hello World
-category: category1
+title: 마크다운 기본 사용법
+description: 마크다운에 대한 기본 사용법입니다. 이 글을 참고해 게시글을 포스팅해보세요! 
+category: category2
 tags: [hello]
 date: 2022-11-13T10:57:35.157Z
 ---
 
-This is my first post on my new fake blog! How exciting!
+## 마크다운 기본 사용법입니다. 
 
-I'm sure I'll write a lot more interesting things in the future.
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
+# 제목 1
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
+## 제목 2
 
-![Chinese Salty Egg](./salty_egg.jpg)
-
-You can also write code blocks here!
-
-```js
-const saltyDuckEgg = "chinese preserved food product"
-```
-
-| Number | Title                                    | Year |
-| :----- | :--------------------------------------- | ---: |
-| 1      | Harry Potter and the Philosopher’s Stone | 2001 |
-| 2      | Harry Potter and the Chamber of Secrets  | 2002 |
-| 3      | Harry Potter and the Prisoner of Azkaban | 2004 |
-
-[View raw (TEST.md)](https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md)
-
-This is a paragraph.
-
-    This is a paragraph.
-
-# Header 1
-
-## Header 2
-
-    Header 1
+    제목 1
     ========
 
-    Header 2
+    제목 2
     --------
 
-# Header 1
+# 제목 1
 
-## Header 2
+## 제목 2
 
-### Header 3
+### 제목 3
 
-#### Header 4
+#### 제목 4
 
-##### Header 5
+##### 제목 5
 
-###### Header 6
+###### 제목 6
 
-    # Header 1
-    ## Header 2
-    ### Header 3
-    #### Header 4
-    ##### Header 5
-    ###### Header 6
+    # 제목 1
+    ## 제목 2
+    ### 제목 3
+    #### 제목 4
+    ##### 제목 5
+    ###### H제목 6
 
-# Header 1
+# 제목 1
 
-## Header 2
+## 제목 2
 
-### Header 3
+### 제목 3
 
-#### Header 4
+#### 제목 4
 
-##### Header 5
+##### 제목 5
 
-###### Header 6
+###### 제목 6
 
     # Header 1 #
     ## Header 2 ##
@@ -89,88 +57,62 @@ This is a paragraph.
     ##### Header 5 #####
     ###### Header 6 ######
 
-> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-    > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-> ## This is a header.
+> 인용문입니다. 
+    > 인용문입니다. 
+> ## 제목
 >
-> 1. This is the first list item.
-> 2. This is the second list item.
+> 1. 첫번 째 줄입니다.
+> 2. 두번 째 줄입니다.
+
 >
-> Here's some example code:
->
->     Markdown.generate();
+    > ## 제목
+    > 1. 첫번 째 줄입니다.
+    > 2. 두번 째 줄입니다.
+- 빨강
+- 초록
+- 파랑
 
-    > ## This is a header.
-    > 1. This is the first list item.
-    > 2. This is the second list item.
-    >
-    > Here's some example code:
-    >
-    >     Markdown.generate();
-
-- Red
-- Green
-- Blue
-
-* Red
-* Green
-* Blue
-
-- Red
-- Green
-- Blue
+* 빨강
+* 초록
+* 파랑
 
 ```markdown
-- Red
-- Green
-- Blue
+- 빨강
+- 초록
+- 파랑
 
-* Red
-* Green
-* Blue
-
-- Red
-- Green
-- Blue
+* 빨강
+* 초록
+* 파랑
 ```
 
-- `code goes` here in this line
-- **bold** goes here
+- `인라인 코드 작성` 
+- **볼드** 
 
 ```markdown
-- `code goes` here in this line
-- **bold** goes here
+- `인라인 코드 작성` 
+- **볼드**
 ```
 
-1. Buy flour and salt
-1. Mix together with water
-1. Bake
+1. 자동으로
+2. 순서를
+3. 부여합니다.
 
 ```markdown
-1. Buy flour and salt
-1. Mix together with water
-1. Bake
+1. 자동으로
+1. 순서를
+1. 부여합니다.
 ```
 
-1. `code goes` here in this line
-1. **bold** goes here
+문단:
 
-```markdown
-1. `code goes` here in this line
-1. **bold** goes here
-```
-
-Paragraph:
-
-    Code
+    코드
 
 <!-- -->
 
-    Paragraph:
+    문단:
 
-        Code
+        코드
 
 ---
 
@@ -192,42 +134,42 @@ Paragraph:
 
     ---------------------------------------
 
-This is [an example](http://example.com "Example") link.
+이건 [예시](http://example.com "예시") 링크.
 
-[This link](http://example.com) has no title attr.
+[이 링크는](http://example.com) 예시 링크.
 
-This is [an example][id] reference-style link.
+이 [링크][id] 예시 링크.
 
-[id]: http://example.com "Optional Title"
+[id]: http://example.com "선택적 제목"
 
-    This is [an example](http://example.com "Example") link.
+    이건 [예시](http://example.com "예시") 링크.
 
-    [This link](http://example.com) has no title attr.
+    [이 링크는](http://example.com) 예시 링크.
 
-    This is [an example] [id] reference-style link.
+    이 [링크] [id] 예시 링크.
 
-    [id]: http://example.com "Optional Title"
+    [id]: http://example.com "선택적 제목"
 
-_single asterisks_
+_이탤릭체_
 
-_single underscores_
+_이탤릭체_
 
-**double asterisks**
+**두껍게**
 
-**double underscores**
+**두껍게**
 
-    *single asterisks*
+    *이탤릭체*
 
-    _single underscores_
+    _이탤릭체_
 
-    **double asterisks**
+    **두껍게**
 
-    __double underscores__
+    __두껍게__
 
-This paragraph has some `code` in it.
+이 문단은 코드를 가질 수 있다. `code`.
 
-    This paragraph has some `code` in it.
+    이 문단은 코드를 가질 수 있다. `code`.
 
-![Alt Text](https://via.placeholder.com/200x50 "Image Title")
+![제목](https://via.placeholder.com/200x50 "이미지 타이틀")
 
-    ![Alt Text](https://via.placeholder.com/200x50 "Image Title")
+    ![제목](https://via.placeholder.com/200x50 "이미지 타이틀")
