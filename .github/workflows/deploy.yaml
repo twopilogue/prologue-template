@@ -36,7 +36,7 @@ jobs:
           ref: gh-pages
           submodules: recursive
       - name: Upload page artifact
-        uses: actions/upload-pages-artifact@v0
+        uses: actions/upload-pages-artifact@v2.0.0
         with:
           path: .
       - name: Upload artifact
@@ -45,6 +45,7 @@ jobs:
           name: github-pages
           path: /home/runner/work/_temp/artifact.tar
           retention-days: 1
+          overwrite: true
           
 # Deployment job
   deploy:
@@ -60,4 +61,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v3
