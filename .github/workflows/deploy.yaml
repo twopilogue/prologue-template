@@ -37,7 +37,7 @@ jobs:
           ref: gh-pages
           submodules: recursive
       - name: Upload page artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v1
         with:
           path: .
       - name: Upload artifact
